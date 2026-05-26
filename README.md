@@ -12,21 +12,6 @@ La instalación manual de Docker requiere múltiples pasos (clave GPG, repositor
 **Solución:**  
 Scripts que automatizan la instalación completa de Docker según tu sistema operativo.
 
-| Distribución | Versión | Script |
-|--------------|---------|--------|
-| Ubuntu | 22.04 LTS | `ubuntu22/instalar-docker-ubuntu22.sh` |
-| Debian | 12 (Bookworm) | `debian12/instalar-docker-debian12.sh` |
-
----
-
-## 🚀 Tecnologías
-
-| Tecnología | Versión |
-|------------|---------|
-| Docker Engine | latest |
-| Docker Compose | latest |
-| Buildx | latest |
-
 ---
 
 ## ⚙️ INSTALACIÓN
@@ -43,17 +28,15 @@ cd docker-installer
 #### 🐧 Ubuntu 22.04
 
 ```bash
-cd ubuntu22
-chmod +x instalar-docker-ubuntu22.sh
-sudo ./instalar-docker-ubuntu22.sh
+chmod +x install-docker-ubuntu22.sh
+sudo ./install-docker-ubuntu22.sh
 ```
 
 #### 🐧 Debian 12
 
 ```bash
-cd debian12
-chmod +x instalar-docker-debian12.sh
-sudo ./instalar-docker-debian12.sh
+chmod +x install-docker-debian12.sh
+sudo ./install-docker-debian12.sh
 ```
 
 ### 3. Verificar que Docker funciona
@@ -107,10 +90,8 @@ docker system df
 ```
 docker-installer/
 ├── README.md
-├── ubuntu22/
-│   └── instalar-docker-ubuntu22.sh
-└── debian12/
-│   └── instalar-docker-debian12.sh
+├── install-docker-ubuntu22.sh
+└── install-docker-debian12.sh
 ```
 
 ---
